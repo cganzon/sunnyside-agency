@@ -32,6 +32,10 @@ body {
     min-height: 100vh;
 }
 
+img {
+    display: block;
+}
+
   /* ////////////////////// */
  /* Navbar and hero styles */
 /* ////////////////////// */
@@ -39,15 +43,21 @@ body {
     position: relative;
     color: var(--white);
     text-align: center;
+    height: 100%;
 }
 
 .nav {
     width: 88%;
     margin: 0 auto;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     text-align: start;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 1.8rem;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 .burger {
@@ -59,20 +69,21 @@ body {
     border-top: 15px solid transparent;
     border-left: 15px solid transparent;
     position: absolute;
-    right: 6%;
-    top: 21%;
+    right: 0;
+    top: 3rem;
 }
 
 .nav-links {
-    width: 88%;
+    width: 100%;
     list-style-type: none;
     position: absolute;
-    top: 26%;
+    top: 4.85rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     background-color: #fff;
     padding: 1.2rem 0;
+    
 }
 
 .nav-item {
@@ -99,7 +110,7 @@ body {
     font-family: 'Fraunces', serif;
     color: var(--very-dark-desaturated-blue);
     background-color: var(--yellow);
-    padding: 1.1em 2em;
+    padding: 1em 1.6em;
     border-radius: 2em;
 }
 
@@ -116,36 +127,44 @@ body {
     display: block;
 }
 
+.nav, .header-text, .header-arrow {
+    position: absolute;
+}
+
 .header-text {
     width: 90%;
     margin: 0 auto;
     font-family: 'Fraunces', serif;
-    font-size: 2.5rem;
-    font-weight: 900;
+    font-size: 2.4rem;
+    font-weight: 700;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    padding-top: 5.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9.35rem;
 }
 
 .header-arrow {
-    padding-top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18.2rem;
 }
 
 .header-image-mobile {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 .header-image-desktop {
     display: none;
 }
 
-@media (min-width: 730px) {
+@media (min-width: 768px) {
     .popup-accent {
         display: none;
+    }
+
+    .nav {
+        width: 95%;
     }
 
     .nav-links {
@@ -180,7 +199,6 @@ body {
         margin: 0;
     }
     
-
     .burger {
         display: none;
     }
@@ -188,10 +206,6 @@ body {
     .header-image-desktop {
         display: block;
         width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
     }
     
     .header-image-mobile {
@@ -200,9 +214,6 @@ body {
 }
 
 @media (min-width: 1000px) {
-    .nav {
-        width: 96%;
-    }
     .nav-links {
         width: 40%;
     }
@@ -210,21 +221,100 @@ body {
 
 @media(min-width: 1300px) {
     .nav {
-        padding-top: 2.2rem;
+        padding-top: 0.7rem;
     }
+
     .nav-links {
-        width: 35%;
+        width: 34%;
     }
 
     .header-text {
-        padding-top: 8rem;
         font-size: 3.5rem;
+        padding-top: 3.5rem;
+        letter-spacing: 0.7rem;
     }
 
     .header-arrow {
-        padding-top: 105px;
+        padding-top: 4.2rem;
     }
 }
+
+   /* //////////////////////////// */
+  /* Advertisement section */
+ /* //////////////////////////// */
+ .image-transform-mobile,
+ .image-stand-out-mobile,
+ .graphic-design-mobile,
+ .photography-mobile {
+     width: 100%;
+ }
+
+ .image-transform-desktop, 
+ .image-stand-out-desktop,
+ .graphic-design-desktop,
+ .photography-desktop {
+     display: none;
+ }
+
+ .graphic-design, 
+ .photography {
+     position: relative;
+     text-align: center;
+ }
+
+ .graphic-design-title,
+ .photography-title,
+ .graphic-design-paragraph,
+ .photography-paragraph  {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ .graphic-design-title,
+ .photography-title {
+     bottom: 28%;
+ }
+
+ .graphic-design-paragraph,
+ .photography-paragraph {
+     bottom: 10%;
+     width: 88%;
+ }
+
+ @media (min-width: 768px) {
+     .image-transform-desktop,
+     .image-stand-out-desktop {
+         display: block;
+         width: 50%;
+     }
+
+     .graphic-design-desktop,
+     .photography-desktop {
+         display: block;
+         width: 100%;
+     }
+
+     .image-transform-mobile, 
+     .image-stand-out-mobile,
+     .graphic-design-mobile,
+     .photography-mobile {
+         display: none;
+     }
+
+     .transform-section,
+     .stand-out-section {
+         display: flex;
+     }
+
+     .transform-section {
+         flex-direction: row-reverse
+     }
+
+     .cherry-tangerine {
+         display: flex;
+     }
+ }
 
 /* .attribution { 
     font-size: 11px; 
