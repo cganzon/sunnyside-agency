@@ -32,8 +32,7 @@ body {
     font-family: 'Barlow', sans-serif;
     text-align: center;
     min-height: 100vh;
-    background-color: hsl(30, 100%, 99%)
-    /* background-color: #fff; */
+    background-color: hsl(30, 100%, 99%);
 }
 
 img {
@@ -335,7 +334,7 @@ section a {
 
 .graphic-design-paragraph,
 .photography-paragraph {
-    font-size: 0.889em;
+    font-size: 0.9em;
     font-weight: 700;
     line-height: 1.6em;
     padding-top: 1.2rem;
@@ -518,6 +517,60 @@ section a {
         font-weight: 700;
         padding-top: 1.5rem;
     }
+}
+
+ /* ///////////////////// */
+ /* Testimonials section */
+/* ///////////////////// */
+
+.client-testimonials {
+    padding-top: 5rem;
+}
+
+.client {
+    padding-bottom: 5rem;
+}
+
+.testimonials-title,
+.client-name {
+    font-weight: 900;
+}
+
+.testimonials-title,
+.client-occupation {
+    color: var(--grayish-blue);
+}
+
+.testimonials-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 4rem;
+}
+
+.client-image {
+    border-radius: 50%;
+    width: 4.475rem;
+    margin: 0 auto;
+}
+
+.client-paragraph {
+    font-size: 1.1rem;
+    color: var(--dark-blue);
+    padding: 2rem 0;
+    width: 87%;
+    margin: 0 auto;
+}
+
+.client-name {
+    color: var(--very-dark-desaturated-blue);
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.client-occupation {
+    font-size: 0.85rem;
 }
 
 /* .attribution { 
