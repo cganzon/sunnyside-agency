@@ -731,6 +731,10 @@ ul li {
     transition: color 0.15s;
 }
 
+.sr-only {
+    display: none;
+}
+
 .social-links {
     display: flex;
     justify-content: space-around;
