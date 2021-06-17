@@ -26,7 +26,6 @@
     box-sizing: border-box;
 }
 
-/* Typography */
 body {
     font-size: 1.125rem;
     font-family: 'Barlow', sans-serif;
@@ -41,13 +40,6 @@ img {
 
 a {
     text-decoration: none;
-}
-
-h1, 
-h2,
-#contact,
-section a {
-    font-family: 'Fraunces', serif;
 }
 
   /* ///////////// */
@@ -115,6 +107,7 @@ section a {
 
 #contact {
     text-transform: uppercase;
+    font-family: 'Fraunces', serif;
     font-size: 0.9rem;
     color: var(--very-dark-desaturated-blue);
     background-color: var(--yellow);
@@ -284,6 +277,7 @@ section a {
 
 .transform-title,
 .stand-out-title {
+    font-family: 'Fraunces', serif;
     font-size: 1.7em;
     font-weight: 900;
 }
@@ -298,6 +292,7 @@ section a {
 .transform-link, 
 .stand-out-link {
     text-transform: uppercase;
+    font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 0.95em;
 }
@@ -327,6 +322,7 @@ section a {
 
 .graphic-design-title,
 .photography-title {
+    font-family: 'Fraunces', serif;
     font-size: 1.55em;
     font-weight: 900;
 
@@ -533,6 +529,7 @@ section a {
 
 .testimonials-title,
 .client-name {
+    font-family: 'Fraunces', serif;
     font-weight: 900;
 }
 
@@ -564,7 +561,6 @@ section a {
 
 .client-name {
     color: var(--very-dark-desaturated-blue);
-    font-family: 'Fraunces', serif;
     font-size: 1.1rem;
     padding-bottom: 0.5rem;
 }
@@ -573,7 +569,26 @@ section a {
     font-size: 0.85rem;
 }
 
+@media (min-width: 480px) {
+    .clients {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 768px) {
+    .clients {
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .client-paragraph {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
     .client-testimonials {
         padding: 10rem 0;
         max-width: 90rem;
@@ -597,6 +612,7 @@ section a {
     .client-paragraph {
         width: 90%;
         padding: 3rem 0;
+        font-size: 1.1rem;
     }
 }
 
