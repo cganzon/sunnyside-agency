@@ -757,6 +757,7 @@ ul li {
 .attribution { 
     font-size: 0.8rem; 
     text-align: center; 
+    color: var(--very-dark-desaturated-blue);
 }
 
 .attribution-link {
