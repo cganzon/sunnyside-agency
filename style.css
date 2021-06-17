@@ -42,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+ul li {
+    list-style-type: none;
+}
+
   /* ///////////// */
  /* Header styles */
 /* ///////////// */
@@ -68,7 +72,7 @@ a {
 }
 
 .popup-accent {
-    border: 15px solid #fff;
+    border: 15px solid hsl(30, 100%, 99%);;
     border-top: 15px solid transparent;
     border-left: 15px solid transparent;
     position: absolute;
@@ -78,12 +82,11 @@ a {
 
 .nav-links {
     width: 100%;
-    list-style-type: none;
     position: absolute;
     top: 4.85rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: hsl(30, 100%, 99%);
     padding: 1.2rem 0;
     
 }
@@ -97,7 +100,7 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--very-dark-desaturated-blue);
+    color: var(--dark-blue);
 }
 
 #contact-nav-item {
@@ -219,6 +222,10 @@ a {
 }
 
 @media (min-width: 1000px) {
+    .logo {
+        width: 10rem;
+    }
+
     .nav-links {
         width: 40%;
     }
@@ -649,11 +656,65 @@ a {
     }
 }
 
-/* .attribution { 
-    font-size: 11px; 
+/* Footer */
+/* .footer {
+    background-color: var(--dark-moderate-cyan);
+} */
+.footer {
+    background-color: hsl(168, 57%, 72%);
+    padding: 4rem 0;
+}
+
+.footer-logo {
+    width: 10rem;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.footer-link {
+    color: var(--dark-moderate-cyan);
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    width: 12rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.footer-link:hover,
+.social-link:hover ~ svg path {
+    color: var(--white);
+    fill: var(--white);
+}
+
+.social-link:hover > svg > path {
+    fill: var(--white);
+}
+
+.attribution { 
+    font-size: 0.8rem; 
     text-align: center; 
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-} */
+.attribution-link {
+    color: var(--dark-desaturated-cyan);
+}
+
+.attribution-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .attribution { 
+        font-size: 1rem; 
+    }
+}
