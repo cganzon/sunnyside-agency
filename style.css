@@ -79,10 +79,6 @@ ul li {
     cursor: pointer;
 }
 
-.hide-navbar {
-    display: none;
-}
-
 .popup-accent {
     border: 15px solid hsl(30, 100%, 99%);;
     border-top: 15px solid transparent;
@@ -139,9 +135,13 @@ ul li {
     display: none;
 }
 
-/* This class is toggled on or off when the user clicks on the burger */
+/* The bottom two classes are toggled on or off when the user clicks on the navbar toggler icon */
 .show-navbar {
     display: block;
+}
+
+.hide-navbar {
+    display: none;
 }
 
 .nav, .header-text, .header-arrow {
@@ -757,7 +757,6 @@ ul li {
 .attribution { 
     font-size: 0.8rem; 
     text-align: center; 
-    color: var(--very-dark-desaturated-blue);
 }
 
 .attribution-link {
