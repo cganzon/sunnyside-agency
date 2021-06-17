@@ -256,7 +256,7 @@ ul li {
 
     .header-text {
         font-size: 3.5rem;
-        padding-top: 3.5rem;
+        padding-top: 3rem;
         letter-spacing: 0.7rem;
     }
 
@@ -659,6 +659,7 @@ ul li {
 
     .client {
         flex: 1;
+        padding-bottom: 1rem;
     }
 
     .testimonials-title {
@@ -667,7 +668,7 @@ ul li {
 
     .client-paragraph {
         width: 90%;
-        padding: 4.5rem 0;
+        padding: 4rem 0;
         font-size: 1.1rem;
     }
 }
@@ -716,6 +717,7 @@ ul li {
 .footer-logo {
     width: 10rem;
     margin: 0 auto;
+    padding-top: 0.5rem;
 }
 
 .footer-links {
