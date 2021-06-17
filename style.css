@@ -75,8 +75,16 @@ ul li {
     z-index: 999;
 }
 
-.burger {
+.close-icon {
+    font-size: 23.5px;
+}
+
+.burger, .close-icon {
     cursor: pointer;
+}
+
+.hide-navbar {
+    display: none;
 }
 
 .popup-accent {
@@ -136,7 +144,7 @@ ul li {
 }
 
 /* This class is toggled on or off when the user clicks on the burger */
-.nav-active {
+.show-navbar {
     display: block;
 }
 
@@ -213,7 +221,7 @@ ul li {
         margin: 0;
     }
     
-    .burger {
+    .burger, .hide-navbar {
         display: none;
     }
 
