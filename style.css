@@ -127,7 +127,8 @@ ul li {
 }
 
 #contact:hover {
-    background-color: hsl(51, 100%, 45%);
+    background-color: hsl(34, 100%, 50%);
+    color: var(--white);
     transition: 0.15s;
 }
 
@@ -135,7 +136,7 @@ ul li {
     display: none;
 }
 
-/* The bottom two classes are toggled on or off when the user clicks on the navbar toggler icon */
+/* The bottom two classes are toggled on or off when the user clicks on the navbar toggler */
 .show-navbar {
     display: block;
 }
