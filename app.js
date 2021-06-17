@@ -7,14 +7,15 @@ let closeIcon = document.querySelector('.close-icon');
 navBurger.addEventListener('click', () => {
     popUpNav.classList.toggle('show-navbar');
     popUpAccent.classList.toggle('show-navbar');
-    navBurger.classList.remove('show-navbar');
-    navBurger.classList.add('hide-navbar');
+    navBurger.classList.toggle('hide-navbar');
+    closeIcon.classList.toggle('hide-navbar');
     closeIcon.classList.toggle('show-navbar');
 })
 
 closeIcon.addEventListener('click', () => {
     popUpNav.classList.toggle('show-navbar');
     popUpAccent.classList.toggle('show-navbar');
-    navBurger.classList.toggle('show-navbar')
-    closeIcon.classList.toggle('show-navbar')
+    navBurger.classList.toggle('hide-navbar');
+    closeIcon.classList.toggle('show-navbar');
+    closeIcon.classList.toggle('hide-navbar');
 })
