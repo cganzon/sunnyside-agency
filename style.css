@@ -524,11 +524,11 @@ section a {
 /* ///////////////////// */
 
 .client-testimonials {
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
 .client {
-    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 .testimonials-title,
@@ -545,7 +545,6 @@ section a {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    padding-bottom: 4rem;
 }
 
 .client-image {
@@ -557,6 +556,7 @@ section a {
 .client-paragraph {
     font-size: 1.1rem;
     color: var(--dark-blue);
+    line-height: 1.8rem;
     padding: 2rem 0;
     width: 87%;
     margin: 0 auto;
@@ -571,6 +571,33 @@ section a {
 
 .client-occupation {
     font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+    .client-testimonials {
+        padding: 10rem 0;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+
+    .clients {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .client {
+        flex: 1;
+    }
+
+    .testimonials-title {
+        font-size: 1.2rem;
+    }
+
+    .client-paragraph {
+        width: 90%;
+        padding: 3rem 0;
+    }
 }
 
 /* .attribution { 
